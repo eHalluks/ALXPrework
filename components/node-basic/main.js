@@ -184,91 +184,91 @@ const names = ['Damian', 'Paweł', 'Dominik'];
 
 // })
 
-const books = [
-    {
-    name: "Harry Potter",
-    category: "adventure"
-    },
-    {
-    name: 'Alice in Wonderland',
-    category: 'fantasy'
-    },
-    {
-    name: 'Lord of the Rings',
-    category: 'fantasy'
-    }
-]
+// const books = [
+//     {
+//     name: "Harry Potter",
+//     category: "adventure"
+//     },
+//     {
+//     name: 'Alice in Wonderland',
+//     category: 'fantasy'
+//     },
+//     {
+//     name: 'Lord of the Rings',
+//     category: 'fantasy'
+//     }
+// ]
 
 
-// 1. Przy uzyciu funkcji filter, wyswietl tablice ksiazek z kategorii adventure
+// // 1. Przy uzyciu funkcji filter, wyswietl tablice ksiazek z kategorii adventure
 
-// const adventureBooks = books.filter(book => {
-//   return book.category === 'adventure'
+// // const adventureBooks = books.filter(book => {
+// //   return book.category === 'adventure'
+// // })
+
+// // console.log(adventureBooks)
+
+// // 2. Przy uzyciu funkcji filter, wyszukaj elementy, ktore maja w swojej nazwie ciag znakow 'er'
+
+// // const booksWithPhraseEr = books.filter(book => {
+// //   return book.name.includes('er');
+// // })
+
+// // console.log(booksWithPhraseEr)
+
+// // 3. Przy uzyciu funkcji map, stworz tablice zawierajaca ile jest liter w nazwie ksiazki
+
+// // const letterFromBooks = books.map(book => {
+// //   return book.name.length
+// // });
+
+// // console.log(letterFromBooks)
+
+
+
+// books.forEach(par => {
+
+//     if(par.category === 'adventure') {
+
+//         console.log(par.name);
+//         console.log(par.category);
+
+//     }
+
 // })
 
-// console.log(adventureBooks)
+// books.forEach(par => {
 
-// 2. Przy uzyciu funkcji filter, wyszukaj elementy, ktore maja w swojej nazwie ciag znakow 'er'
+//     console.log(books.filter('adventure'))
 
-// const booksWithPhraseEr = books.filter(book => {
-//   return book.name.includes('er');
 // })
 
-// console.log(booksWithPhraseEr)
+// books.forEach(par => {
 
-// 3. Przy uzyciu funkcji map, stworz tablice zawierajaca ile jest liter w nazwie ksiazki
+//     if(par.category.includes('er')) {
 
-// const letterFromBooks = books.map(book => {
-//   return book.name.length
-// });
+//         console.log(par.name);
+//         console.log(par.category);
 
-// console.log(letterFromBooks)
+//     }
 
+// })
 
+// const ArrayCharactersLength = [];
 
-books.forEach(par => {
+// for(let v of books){
 
-    if(par.category === 'adventure') {
+//     ArrayCharactersLength.push(v.name.length)
 
-        console.log(par.name);
-        console.log(par.category);
+// }
 
-    }
+// console.log(ArrayCharactersLength)
 
-})
+// books.map(characters => {
 
-books.forEach(par => {
+//     console.log(characters.length)
 
-    console.log(books.filter('adventure'))
-
-})
-
-books.forEach(par => {
-
-    if(par.category.includes('er')) {
-
-        console.log(par.name);
-        console.log(par.category);
-
-    }
-
-})
-
-const ArrayCharactersLength = [];
-
-for(let v of books){
-
-    ArrayCharactersLength.push(v.name.length)
-
-}
-
-console.log(ArrayCharactersLength)
-
-books.map(characters => {
-
-    console.log(characters.length)
-
-})
+// })
 
 //1
 myfunCalculations = (value1, value2) => {
